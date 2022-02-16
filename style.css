@@ -1,0 +1,16 @@
+
+/* .text-center{
+    background-color: aqua;
+} */
+
+.image img{
+    height: 700px;
+}
+ .input-field{
+    background-color: rgba(38, 12, 12, 0.2);
+  padding: 6px;
+  width: 50%;
+}
+#calculate-btn{
+background-color: rgba(10, 74, 236, 0.877);
+}
