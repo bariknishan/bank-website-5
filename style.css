@@ -14,3 +14,13 @@
 #calculate-btn{
 background-color: rgba(10, 74, 236, 0.877);
 }
+#save-btn{
+    background-color: rgba(10, 74, 236, 0.877);
+    padding: 5px;
+  /* width: 30%; */
+}
+
+.last-input{
+    width: 60px;
+    background-color: rgba(38, 12, 12, 0.2);
+}
