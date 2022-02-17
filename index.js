@@ -14,17 +14,10 @@ document.getElementById("calculate-btn" ).addEventListener("click" , function in
     const previousIncomeAmount= parseFloat(previousInputText);
     const total=  previousIncomeAmount+ newIncomeAmount;
     balanceAmount.innerText= newIncomeAmount;
-
- 
-       
-
-      
-    
+  
 // 
     // incomeInput.value= "";
     
-
-
      // food area
      const foodCostInput= document.getElementById("food-input");
      const foodCostInputText= foodCostInput.value;
@@ -72,6 +65,48 @@ document.getElementById("calculate-btn" ).addEventListener("click" , function in
 }) ;
 
 
+document.getElementById("save-btn").addEventListener("click", function () {
+    // console.log("clicked");
+
+    const saveInput= document.getElementById("percentage-input")
+    const saveInputText= saveInput.value;
+    const saveAmount= parseFloat(saveInputText);
+   
+    const savingAmount= document.getElementById("income-input");
+    /// saving by input
+    const newIncomeTotalText= savingAmount.value;
+    const IncomeAmount= parseFloat(newIncomeTotalText);
+    const newTotalAmount= IncomeAmount + saveAmount;
+    savingAmount.value= IncomeAmount;
+
+    const newSave = document.getElementById("saving-balance")
+    const prevoiusSave= newSave.innerText;
+    const previuosSaveAmount= parseFloat(prevoiusSave);
+    const totalSave=  IncomeAmount * saveAmount / 100;
+    newSave.innerText= totalSave;
+
+    //  remaining balance field 
+  
+  const incomeBalance=  document.getElementById("income-balance");
+  const incomeBalanceText= incomeBalance.innerText;
+  const newIncomeBalance= parseFloat(incomeBalanceText);
+
+ const remainBalance= document.getElementById("remaining-balance");
+ const remainBalanceText= remainBalance.innerText;
+ const remainBalanceAmount= parseFloat(remainBalanceText);
+ const totalr= newIncomeBalance - totalSave;
+ remainBalance.innerText= totalr;
+
+    
+
+
+
+
+
+
+
+
+});
     
    
 
