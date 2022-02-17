@@ -1,23 +1,21 @@
 
-/* .text-center{
-    background-color: aqua;
-} */
+/* external css for form */
 
 .image img{
     height: 700px;
-}
+  }
  .input-field{
     background-color: rgba(38, 12, 12, 0.2);
   padding: 6px;
   width: 50%;
+  }
+  #calculate-btn{
+  background-color: rgba(10, 74, 236, 0.877);
 }
-#calculate-btn{
-background-color: rgba(10, 74, 236, 0.877);
-}
-#save-btn{
+  #save-btn{
     background-color: rgba(10, 74, 236, 0.877);
     padding: 5px;
-  /* width: 30%; */
+ 
 }
 
 .last-input{
